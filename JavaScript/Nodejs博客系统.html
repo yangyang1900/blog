@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>朱青 Blog</title>
+    <meta name="description" content="记录学习过程">
+    <link rel="icon" href="/blog/cat.jpg">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.6342a743.css" as="style"><link rel="preload" href="/blog/assets/js/app.5484d560.js" as="script"><link rel="preload" href="/blog/assets/js/2.bb129444.js" as="script"><link rel="preload" href="/blog/assets/js/7.836794e7.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.687682e0.js"><link rel="prefetch" href="/blog/assets/js/11.858c793b.js"><link rel="prefetch" href="/blog/assets/js/12.4f1a55b9.js"><link rel="prefetch" href="/blog/assets/js/13.656d27c0.js"><link rel="prefetch" href="/blog/assets/js/3.5ae6fe7c.js"><link rel="prefetch" href="/blog/assets/js/4.63ece149.js"><link rel="prefetch" href="/blog/assets/js/5.14694886.js"><link rel="prefetch" href="/blog/assets/js/6.4f677a6c.js"><link rel="prefetch" href="/blog/assets/js/8.71e8998a.js"><link rel="prefetch" href="/blog/assets/js/9.3b08b35a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.6342a743.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">朱青 Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/CSS/" class="nav-link">HTML/CSS</a></div><div class="nav-item"><a href="/blog/JavaScript/" class="nav-link router-link-active">JavaScript</a></div><div class="nav-item"><a href="/blog/Algorithms/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/yangyang1900/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/blog/CSS/" class="nav-link">HTML/CSS</a></div><div class="nav-item"><a href="/blog/JavaScript/" class="nav-link router-link-active">JavaScript</a></div><div class="nav-item"><a href="/blog/Algorithms/" class="nav-link">数据结构与算法</a></div> <a href="https://github.com/yangyang1900/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>HTML/CSS</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/CSS/" class="sidebar-link">Home</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>数据结构与算法</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><p>1.处理GET/POST请求</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>method<span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//GET</span>
+	<span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url<span class="token punctuation">;</span>   <span class="token comment">//获取请求的完整 url</span>
+
+	<span class="token comment">//querystring.parse(&quot;name=whitemu&amp;sex=man&amp;sex=women&quot;);</span>
+	<span class="token comment">/*
+	return:
+	 { name: 'whitemu', sex: [ 'man', 'women' ] }
+	*/</span>
+	req<span class="token punctuation">.</span>query <span class="token operator">=</span> querystring<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//解析 querystring</span>
+
+	res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringfy</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>query<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//将对象转换成字符串，res.end返回一个字符串</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+	<span class="token keyword">if</span><span class="token punctuation">(</span>req<span class="token punctuation">.</span>method <span class="token operator">===</span> <span class="token string">'POST'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>   <span class="token comment">//POST</span>
+		<span class="token comment">//数据格式</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'content-type'</span><span class="token punctuation">,</span>req<span class="token punctuation">.</span>headers<span class="token punctuation">[</span><span class="token string">'content-type'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">//接收数据</span>
+		<span class="token keyword">let</span> postData <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+		req<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span><span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+			postData <span class="token operator">+=</span> chunk<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		req<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>postData<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'hello world'</span><span class="token punctuation">)</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> server <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+
+	<span class="token keyword">const</span> method <span class="token operator">=</span> req<span class="token punctuation">.</span>method<span class="token punctuation">;</span>   <span class="token comment">//GET</span>
+	<span class="token keyword">const</span> url <span class="token operator">=</span> req<span class="token punctuation">.</span>url<span class="token punctuation">;</span>   <span class="token comment">//获取请求的完整 url</span>
+
+	<span class="token keyword">const</span> path <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+	<span class="token comment">//querystring.parse(&quot;name=whitemu&amp;sex=man&amp;sex=women&quot;);</span>
+	<span class="token comment">/*
+	return:
+	 { name: 'whitemu', sex: [ 'man', 'women' ] }
+	*/</span>
+	<span class="token keyword">const</span> query <span class="token operator">=</span> querystring<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//解析 querystring</span>
+
+	<span class="token comment">//设置返回格式为 JSON</span>
+	res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">'Content-type'</span><span class="token punctuation">,</span><span class="token string">'application/json'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">//返回的数据</span>
+	<span class="token keyword">const</span> resData <span class="token operator">=</span> <span class="token punctuation">{</span>
+		method<span class="token punctuation">,</span>
+		url<span class="token punctuation">,</span>
+		path<span class="token punctuation">,</span>
+		query
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 返回（综合应用GET/POST）</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>method <span class="token operator">===</span> <span class="token string">'GET'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>
+            <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>resData<span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>method <span class="token operator">===</span> <span class="token string">'POST'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> postData <span class="token operator">=</span> <span class="token string">''</span>
+        req<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'data'</span><span class="token punctuation">,</span> <span class="token parameter">chunk</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            postData <span class="token operator">+=</span> chunk<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        req<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'end'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            resData<span class="token punctuation">.</span>postData <span class="token operator">=</span> postData
+            <span class="token comment">// 返回</span>
+            res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>
+                <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>resData<span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><p>2.回调地狱和Promise解决：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">//1.callback 方式获取一个文件的内容</span>
+<span class="token keyword">function</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token parameter">fileName<span class="token punctuation">,</span> callback</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> fullFileName <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'files'</span><span class="token punctuation">,</span> fileName<span class="token punctuation">)</span>
+    fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>fullFileName<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token keyword">return</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">callback</span><span class="token punctuation">(</span>
+            <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 测试 callback-hell（回调地狱）</span>
+<span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token string">'a.json'</span><span class="token punctuation">,</span> <span class="token parameter">aData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a data'</span><span class="token punctuation">,</span> aData<span class="token punctuation">)</span>
+    <span class="token function">getFileContent</span><span class="token punctuation">(</span>aData<span class="token punctuation">.</span>next<span class="token punctuation">,</span> <span class="token parameter">bData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'b data'</span><span class="token punctuation">,</span> bData<span class="token punctuation">)</span>
+        <span class="token function">getFileContent</span><span class="token punctuation">(</span>bData<span class="token punctuation">.</span>next<span class="token punctuation">,</span> <span class="token parameter">cData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'c data'</span><span class="token punctuation">,</span> cData<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+
+<span class="token comment">//2.利用Promise解决回调地狱</span>
+
+<span class="token comment">// 用 promise 获取文件内容</span>
+<span class="token keyword">function</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token parameter">fileName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> promise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> fullFileName <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'files'</span><span class="token punctuation">,</span> fileName<span class="token punctuation">)</span>
+        fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>fullFileName<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>
+                <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> promise
+<span class="token punctuation">}</span>
+
+<span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token string">'a.json'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">aData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a data'</span><span class="token punctuation">,</span> aData<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span>aData<span class="token punctuation">.</span>next<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">bData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'b data'</span><span class="token punctuation">,</span> bData<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span>bData<span class="token punctuation">.</span>next<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">cData</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'c data'</span><span class="token punctuation">,</span> cData<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//3.使用async await解决</span>
+<span class="token keyword">function</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token parameter">fileName</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> promise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> fullFileName <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'files'</span><span class="token punctuation">,</span> fileName<span class="token punctuation">)</span>
+        fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>fullFileName<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">reject</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+                <span class="token keyword">return</span>
+            <span class="token punctuation">}</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span>
+                <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> promise
+<span class="token punctuation">}</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">readFileData</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 同步写法</span>
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> aData <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span><span class="token string">'a.json'</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'a data'</span><span class="token punctuation">,</span> aData<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> bData <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span>aData<span class="token punctuation">.</span>next<span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'b data'</span><span class="token punctuation">,</span> bData<span class="token punctuation">)</span>
+        <span class="token keyword">const</span> cData <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getFileContent</span><span class="token punctuation">(</span>bData<span class="token punctuation">.</span>next<span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'c data'</span><span class="token punctuation">,</span> cData<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">readFileData</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// async await 要点：</span>
+<span class="token comment">// 1. await 后面可以追加 promise 对象，获取 resolve 的值</span>
+<span class="token comment">// 2. await 必须包裹在 async 函数里面</span>
+<span class="token comment">// 3. async 函数执行返回的也是一个 promise 对象</span>
+<span class="token comment">// 4. try-catch 截获 promise 中 reject 的值</span>
+</code></pre></div><ol start="3"><li></li></ol> <p>为何要将router和controller分开？ router只管路由和返回数据的一个格式，controller负责处理数据</p> <p>4.路由 和 API</p> <p>API：前端和后端、不同端（子系统）之间对接的一个术语</p> <p>url（路由） ‘/api/blog/list’get ， 输入 ， 输出</p> <p>路由： API 的一部分 后端系统内部的一个模块</p> <ol start="5"><li></li></ol> <p>sql增删改查：</p> <p>1、增： insert into 表名 ( 字段1,字段2 ) values ( 'a','b' );</p> <p>2、删：delete from 表名 where 字段名 ='ab';</p> <p>3、改： update 表名 set 字段名='ab' where ...；</p> <p>4、 查：select * from 表名;</p> <p>6.Event Loop测试：</p> <div class="language- extra-class"><pre class="language-text"><code>//1.callback 方式获取一个文件的内容
+function getFileContent(fileName, callback) {
+    const fullFileName = path.resolve(__dirname, 'files', fileName)
+    fs.readFile(fullFileName, (err, data) =&gt; {
+        if (err) {
+            console.error(err)
+            return
+        }
+        callback(
+            JSON.parse(data.toString())
+        )
+    })
+}
+
+// 测试 callback-hell（回调地狱）
+getFileContent('a.json', aData =&gt; {
+    console.log('a data', aData)
+    getFileContent(aData.next, bData =&gt; {
+        console.log('b data', bData)
+        getFileContent(bData.next, cData =&gt; {
+            console.log('c data', cData)
+        })
+    })
+})
+
+
+//2.利用Promise解决回调地狱
+
+// 用 promise 获取文件内容
+function getFileContent(fileName) {
+    const promise = new Promise((resolve, reject) =&gt; {
+        const fullFileName = path.resolve(__dirname, 'files', fileName)
+        fs.readFile(fullFileName, (err, data) =&gt; {
+            if (err) {
+                reject(err)
+                return
+            }
+            resolve(
+                JSON.parse(data.toString())
+            )
+        })
+    })
+    return promise
+}
+
+getFileContent('a.json')
+    .then(aData =&gt; {
+        console.log('a data', aData)
+        return getFileContent(aData.next)
+    })
+    .then(bData =&gt; {
+        console.log('b data', bData)
+        return getFileContent(bData.next)
+    })
+    .then(cData =&gt; {
+        console.log('c data', cData)
+    })
+
+//3.使用async await解决
+function getFileContent(fileName) {
+    const promise = new Promise((resolve, reject) =&gt; {
+        const fullFileName = path.resolve(__dirname, 'files', fileName)
+        fs.readFile(fullFileName, (err, data) =&gt; {
+            if (err) {
+                reject(err)
+                return
+            }
+            resolve(
+                JSON.parse(data.toString())
+            )
+        })
+    })
+    return promise
+}
+
+async function readFileData() {
+    // 同步写法
+    try {
+        const aData = await getFileContent('a.json')
+        console.log('a data', aData)
+        const bData = await getFileContent(aData.next)
+        console.log('b data', bData)
+        const cData = await getFileContent(bData.next)
+        console.log('c data', cData)
+    } catch (err) {
+        console.error(err)
+    }
+}
+
+readFileData()
+
+// async await 要点：
+// 1. await 后面可以追加 promise 对象，获取 resolve 的值
+// 2. await 必须包裹在 async 函数里面
+// 3. async 函数执行返回的也是一个 promise 对象
+// 4. try-catch 截获 promise 中 reject 的值
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>function loadImg(src) {
+    const imgUrl = new Promise((resolve, reject) =&gt; {
+        let img = document.createElement('img')
+        img.onload = () =&gt; resolve(img)
+        img.onerror = () =&gt; reject()
+        img.src = src
+    })
+
+    return imgUrl;
+}
+ 
+const src = 'https://www.imooc.com/static/img/index/logo.png'
+ 
+loadImg(src).then((img)=&gt; {
+    console.log(img.width)    // 成功打印 200
+    return img;
+}).then((img) =&gt; {
+    console.log(img.width)    // 
+}).catch(error =&gt; {
+    console.log(`${error}`)
+})
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>console.log('start');
+setTimeout((function () {
+  console.log('立即执行');
+  return function () {
+    console.log('setTimeout');
+  };
+})(), 0);
+console.log('end');
+
+console.log('start')
+setTimeout((function () {
+  console.log('setTimeout')
+})(), 0)
+console.log('end')
+
+
+//
+console.log('start')
+
+const interval = setInterval(() =&gt; {  
+  console.log('setInterval')
+}, 0)
+
+setTimeout(() =&gt; {  
+  console.log('setTimeout 1')
+  Promise.resolve()
+      .then(() =&gt; {
+        console.log('promise 3')
+      })
+      .then(() =&gt; {
+        console.log('promise 4')
+      })
+      .then(() =&gt; {
+        setTimeout(() =&gt; {
+          console.log('setTimeout 2')
+          Promise.resolve()
+              .then(() =&gt; {
+                console.log('promise 5')
+              })
+              .then(() =&gt; {
+                console.log('promise 6')
+              })
+              .then(() =&gt; {
+                clearInterval(interval)
+              })
+        }, 0)
+      })
+}, 0)
+
+Promise.resolve()
+    .then(() =&gt; {  
+        console.log('promise 1')
+    })
+    .then(() =&gt; {
+        console.log('promise 2')
+    })
+
+//
+setTimeout(function() {
+    console.log('timeout1');
+})
+
+new Promise(function(resolve) {
+    console.log('promise1');
+    for(var i = 0; i &lt; 1000; i++) {
+        i == 99 &amp;&amp; resolve();
+    }
+    console.log('promise2');
+}).then(function() {
+    console.log('then1');
+})
+
+console.log('global1');
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>/*
+* @Author: yangyang
+* @Date:   2019-07-14 20:02:05
+* @Last Modified by:   yangyang
+* @Last Modified time: 2019-07-31 21:49:45
+*/
+	console.log('golb1');
+
+	setTimeout(function() {
+	    console.log('timeout1');
+	    process.nextTick(function() {
+	        console.log('timeout1_nextTick');
+	    })
+	    new Promise(function(resolve) {
+	        console.log('timeout1_promise');
+	        resolve();
+	    }).then(function() {
+	        console.log('timeout1_then')
+	    })
+	})
+
+	setImmediate(function() {
+	    console.log('immediate1');
+	    process.nextTick(function() {
+	        console.log('immediate1_nextTick');
+	    })
+	    new Promise(function(resolve) {
+	        console.log('immediate1_promise');
+	        resolve();
+	    }).then(function() {
+	        console.log('immediate1_then')
+	    })
+	})
+
+	process.nextTick(function() {
+	    console.log('glob1_nextTick');
+	})
+	new Promise(function(resolve) {
+	    console.log('glob1_promise');
+	    resolve();
+	}).then(function() {
+	    console.log('glob1_then')
+	})
+
+	setTimeout(function() {
+	    console.log('timeout2');
+	    process.nextTick(function() {
+	        console.log('timeout2_nextTick');
+	    })
+	    new Promise(function(resolve) {
+	        console.log('timeout2_promise');
+	        resolve();
+	    }).then(function() {
+	        console.log('timeout2_then')
+	    })
+	})
+
+	process.nextTick(function() {
+	    console.log('glob2_nextTick');
+	})
+	new Promise(function(resolve) {
+	    console.log('glob2_promise');
+	    resolve();
+	}).then(function() {
+	    console.log('glob2_then')
+	})
+
+	setImmediate(function() {
+	    console.log('immediate2');
+	    process.nextTick(function() {
+	        console.log('immediate2_nextTick');
+	    })
+	    new Promise(function(resolve) {
+	        console.log('immediate2_promise');
+	        resolve();
+	    }).then(function() {
+	        console.log('immediate2_then')
+	    })
+	})
+
+/*$ node demo.js
+golb1
+glob1_promise
+glob2_promise
+glob1_nextTick
+glob2_nextTick
+glob1_then
+glob2_then
+timeout1
+timeout1_promise
+timeout2
+timeout2_promise
+timeout1_nextTick
+timeout2_nextTick
+timeout1_then
+timeout2_then
+immediate1
+immediate1_promise
+immediate2
+immediate2_promise
+immediate1_nextTick
+immediate2_nextTick
+immediate1_then
+immediate2_then*/
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.5484d560.js" defer></script><script src="/blog/assets/js/2.bb129444.js" defer></script><script src="/blog/assets/js/7.836794e7.js" defer></script>
+  </body>
+</html>
