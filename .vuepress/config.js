@@ -14,8 +14,27 @@ module.exports = {
           { text: 'css', link: '/css' }
         ]
       },
-      { text: 'JavaScript', link: 'JavaScript' }
+      { text: 'JavaScript', link: '/JavaScript' }
     ],
-    
+    sidebar: {
+      '/html': [
+        '',     /* /foo/ */
+        'one',  /* /foo/one.html */
+        'two'   /* /foo/two.html */
+      ],
+
+      '/css': [
+        '',      /* /bar/ */
+        'three', /* /bar/three.html */
+        'four'   /* /bar/four.html */
+      ],
+
+      // fallback
+      '/JavaScript': [
+        '',        /* / */
+        'contact', /* /contact.html */
+        'about'    /* /about.html */
+      ]
+    }
   },
 }
